@@ -1,0 +1,6 @@
+build: 
+  script:
+    - echo "Checking build..."
+    - javac --release 11 src/main/Main.java
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "V.1"'
